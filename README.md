@@ -1,5 +1,5 @@
-**Author**: [@olivier_perard](https://github.com/operard)  
-**Maintainer**: [@olivier_perard](https://github.com/operard)
+**Author**: [@operard](https://github.com/operard)  
+**Maintainer**: [@operard](https://github.com/operard)
 
 # Git Workflow Workshop for Two Programmers 💻 💻
 
