@@ -63,6 +63,20 @@ Installation in Mac OSX
 This is what your remote and local repositories look like after this. HEAD is a reference to your current location.</br>
 <img src="images/step1GitFlow.png" width="350" height="auto" alt="repo visual after step 1">
 
+
+## Step 1 Bis - Invite Programmer2 to your repository
+
+With the Programmer1 connected to the repository, we must invite the programmer2 to this repository.
+
+1. Connect to Settings link.
+
+2. Select Collaborators Link.
+
+3. Add Programmer2 like collaborator.
+
+The Programmer2 must accept the invitation received.
+
+
   <!-- ***********************************************************-->
 ## Step 2 - Raise your issues on the work to be done
 
