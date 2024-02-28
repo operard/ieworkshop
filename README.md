@@ -32,11 +32,11 @@ You're working in a team of two on a project for a new client. Steps 1 to 8 in t
 
 ## Step 1 - Programmer 1 creates a new GitHub repo and clones it
 
-1. Connect to the GitHub account of Programmer 1 and create a new repo <your-repo-name-here>. 
+1. Connect to the GitHub account of Programmer 1 and create a new repo `your-repo-name-here`. 
 
 2. initialising it with a `README.md` and `LICENSE`.
 
-3. [Clone](https://help.github.com/articles/cloning-a-repository/) this new repository using your terminal.
+3. [Clone](https://help.github.com/articles/cloning-a-repository/) this new GitHub repository to your terminal.
 
   <img src="images/clone-repository-dialog.png" width="500" height="auto" alt="clone repository dialog">
 
@@ -71,7 +71,7 @@ For the sake of this exercise, we're just going to [add one issue](https://help.
 <!-- ***********************************************************-->
 ## Step 3 - Create and move to a new branch
 
-There are many types of workflow. At FAC, we use [the GitHub flow](https://guides.github.com/introduction/flow/), where the `master` [branch](](https://help.github.com/articles/about-branches/)) is always deployable. In this flow, each branch is used for a separate feature.
+There are many types of workflow. We use [the GitHub flow](https://guides.github.com/introduction/flow/), where the `master` [branch](](https://help.github.com/articles/about-branches/)) is always deployable. In this flow, each branch is used for a separate feature.
 
 1. Create a branch with a unique and descriptive name. For example, `create-heading-with-shadow`.
 
@@ -507,6 +507,6 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
 ***A summary of the above commands and what they do can be found [here](/images/git-flow-summary-table.png) in a neat little table.***
 
 
-**Note**: This workshop does not introduce the very popular idea of forking a repository, which is very useful when wanting to contribute to existing open source projects 💯. Forking is not required when starting a new repository under `foundersandcoders` or `FAC-X` organisations since all your fellow students will be automatically added as contributors. 
+**Note**: This workshop does not introduce the very popular idea of forking a repository, which is very useful when wanting to contribute to existing open source projects 💯. Forking is not required when starting a new repository. 
 
 Having said that, we recommend you read about forking to be able to contribute to open source projects. You can read more about it [here](https://help.github.com/en/articles/fork-a-repo). 
