@@ -30,6 +30,17 @@ An exercise to practice git workflow skills. The workshop should be undertaken b
 
 You're working in a team of two on a project for a new client. Steps 1 to 8 in this section should be completed by one of you, which we'll refer to as `Programmer 1`.
 
+## Prerequisite - Install git in your PC
+
+You must install GIT in your local PC Windows, Linux or Mac using [git install](https://github.com/git-guides/install-git).
+
+Installation in Mac OSX
+
+  ```sh
+  $ sudo brew install git
+  ```
+
+
 ## Step 1 - Programmer 1 creates a new GitHub repo and clones it
 
 1. Connect to the GitHub account of Programmer 1 and create a new repo `your-repo-name-here`. 
