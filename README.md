@@ -37,7 +37,7 @@ You must install GIT in your local PC Windows, Linux or Mac using [git install](
 Installation in Mac OSX
 
   ```sh
-  $ sudo brew install git
+  sudo brew install git
   ```
 
 
@@ -52,7 +52,7 @@ Installation in Mac OSX
   <img src="images/clone-repository-dialog.png" width="500" height="auto" alt="clone repository dialog">
 
   ```sh
-  $ git clone 'PASTE THE URL OF YOUR REPOSITORY HERE'
+  git clone 'PASTE THE URL OF YOUR REPOSITORY HERE'
   ```
 
 4. Move into the newly created directory.
@@ -101,14 +101,14 @@ There are many types of workflow. We use [the GitHub flow](https://guides.github
 1. Create a branch with a unique and descriptive name. For example, `create-heading-with-shadow`.
 
 ```sh
-$ git branch create-heading-with-shadow
+git branch create-heading-with-shadow
 ```
 </br>
 <img src="images/step3(1)GitFlow.png" width="300" height="auto" alt="repo visual after step 1">
 2. Leave the master branch by switching to the new branch you have just created.
 
 ```sh
-$ git checkout create-heading-with-shadow
+git checkout create-heading-with-shadow
 ```
 </br>
 <img src="images/step3(2)GitFlow.png" width="300" height="auto" alt="repo visual after step 1">
@@ -166,7 +166,7 @@ $ git checkout create-heading-with-shadow
 1. Add `index.html` and `style.css` to the [staging area](http://softwareengineering.stackexchange.com/questions/119782/what-does-stage-mean-in-git).
 
   ```sh
-  $ git add index.html style.css
+  git add index.html style.css
   ```
 <img src="images/step5GitFlow.png" width="400" height="auto" alt="repo visual after step 1">
 
@@ -182,10 +182,26 @@ The history of a project is made up of ["commits"](https://stackoverflow.com/que
   It is a good practice to link your commit to an existing issue by typing  `Relates #1`. Thanks to using the hash symbol followed by the relevant issue number your commit will be [automatically linked to an existing issue](https://help.github.com/articles/autolinked-references-and-urls/).
 
   ```sh
-  $ git commit -m 'add git workshop heading & shadow styling
+  git commit -m 'add git workshop heading & shadow styling
   > Relates #1'
   ```
 <img src="images/step6GitFlow.png" width="400" height="auto" alt="repo visual after step 1">
+
+
+## PreRequisite - Create Password for the Programmer1 and the Programmer2
+
+To push your code to the Remote Repository in GitHub.
+
+1. Go to your GitHub Account and then go to the Settings(click on your profile account and you will find the Settings option there)
+
+2. Scroll down and at the sidebar you will see the Developer Settings option. Click on Developer Settings.
+
+3. Click on Personal access tokens and then click on Tokens (classic)
+
+4. Click on Generate new token and then click on Generate new token (classic)
+
+See next link [Here](https://dev.to/shafia/support-for-password-authentication-was-removed-please-use-a-personal-access-token-instead-4nbk)
+
 
 <!-- ***********************************************************-->
 ## Step 7 - Push your local version up to GitHub
@@ -195,7 +211,7 @@ At this point, your remote repo looks exactly the same as at the beginning. You 
 1. [Push](https://help.github.com/articles/pushing-to-a-remote/) the `create-heading-with-shadow` branch up to the "origin" i.e. the GitHub repo that you cloned from.
 
   ```sh
-  $ git push origin create-heading-with-shadow
+  git push origin create-heading-with-shadow
   ```
 
 <img src="images/step7GitFlow.png" width="400" height="auto" alt="repo visual after step 1">
@@ -254,7 +270,7 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 1. Make sure both teammates have a cloned, so you each have a local version on your own computer
 
     ```sh
-    $ git clone 'PASTE THE URL OF YOUR REPOSITORY HERE'
+    git clone 'PASTE THE URL OF YOUR REPOSITORY HERE'
     ```
 
 
@@ -276,20 +292,20 @@ You decide that one of you **(Programmer 1) will resolve issue number 1** while 
 
   ```sh
   # Programmer 1:
-  $ git branch fix-typo-heading
+  git branch fix-typo-heading
 
   # Programmer 2:
-  $ git branch update-class-heading
+  git branch update-class-heading
   ```
 
 1. Both programmers leave the master branch by switching to the new branches.
 
   ```sh
   # Programmer 1:
-  $ git checkout fix-typo-heading
+  git checkout fix-typo-heading
 
   # Programmer 2:
-  $ git checkout update-class-heading
+  git checkout update-class-heading
   ```
 
 Note: You can achieve both steps _at once_ with `git checkout -b <new-branch-name>`.</br>
@@ -320,7 +336,7 @@ Note: You can achieve both steps _at once_ with `git checkout -b <new-branch-nam
 2. Both programmers check the [status](https://git-scm.com/docs/git-status) of their files, to confirm that `index.html` has been modified.
 
   ```sh
-  $ git status
+  git status
   ```
 
 
@@ -331,7 +347,7 @@ Note: You can achieve both steps _at once_ with `git checkout -b <new-branch-nam
 1. Both programmers add their modified `index.html` files to the staging area.
 
   ```sh
-  $ git add index.html
+  git add index.html
   ```
 
 
@@ -342,11 +358,11 @@ Note: You can achieve both steps _at once_ with `git checkout -b <new-branch-nam
 
   ```sh
   # Programmer 1:
-  $ git commit -m 'Fix typo in page heading
+  git commit -m 'Fix typo in page heading
   > Relates #<issue number>'
 
   # Programmer 2:
-  $ git commit -m 'Update class name in heading
+  git commit -m 'Update class name in heading
   > Relates #<issue number>'
   ```
 
@@ -359,19 +375,19 @@ We have so many programmers working on this project now, who knows what changes 
 1. Programmer 1 switches to `master` branch.
 
   ```sh
-  $ git checkout master
+  git checkout master
   ```
 
 1. Programmer 1 [pulls](https://git-scm.com/docs/git-pull) the `master` branch from the remote (GitHub repo) to make sure that the local version of `master` is up to date with the remote (GitHub) version of `master`. (There should be no changes since neither of you has pushed any changes to the remote yet.) **It is a good practice to regularly check for changes on the remote before pushing your local changes.**
 
   ```sh
-  $ git pull origin master
+  git pull origin master
   ```
 
 1. Programmer 1 switches back to the `fix-typo-heading` branch.
 
   ```sh
-  $ git checkout fix-typo-heading
+  git checkout fix-typo-heading
   ```
 
 
@@ -382,7 +398,7 @@ We have so many programmers working on this project now, who knows what changes 
 1. Programmer 1 [pushes](https://help.github.com/articles/pushing-to-a-remote/) `fix-typo-heading` branch to remote
 
   ```sh
-  $ git push origin fix-typo-heading
+  git push origin fix-typo-heading
   ```
 
 <img src="images/2step9GitFlow.png" width="400" height="auto" alt="repo visual after step 1">
@@ -434,13 +450,13 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
 1. Programmer 2 switches to `master` branch.
 
   ```sh
-  $ git checkout master
+  git checkout master
   ```
 
 2. Programmer 2 [pulls](https://git-scm.com/docs/git-pull) the remote `master` branch to make sure that the latest version of the project is available locally.
 
   ```sh
-  $ git pull origin master
+  git pull origin master
   ```
 
   <img src="images/2step13(1)GitFlow.png" width="400" height="auto" alt="repo visual after step 1">
@@ -448,13 +464,13 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
 3. Programmer 2 switches back to the `update-class-heading` branch.
 
   ```sh
-  $ git checkout update-class-heading
+  git checkout update-class-heading
   ```
 
 4. Programmer 2 tries to merge `master` branch into `update-class-heading` branch.
 
   ```sh
-  $ git merge master
+  git merge master
   ```
 
 5. There should be a :collision: merge conflict :collision: since the line with the `<h1>` heading is different. [Merge conflict should be highlighted with HEAD and master markers](http://stackoverflow.com/questions/7901864/git-conflict-markers) as follows:
@@ -485,10 +501,10 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
 
   ```sh
   # First add to staging area
-  $ git add index.html
+  git add index.html
 
   # Then commit changes
-  $ git commit -m 'Fix merge conflict
+  git commit -m 'Fix merge conflict
   > Relates #<issue number> and #<issue number>'
   ```
 
@@ -500,7 +516,7 @@ Programmer 2 [reviews the pull request](https://help.github.com/articles/about-p
 1. Programmer 2 [pushes](https://help.github.com/articles/pushing-to-a-remote/) `update-class-heading` branch to remote.
 
   ```sh
-    $ git push origin update-class-heading
+    git push origin update-class-heading
   ```
 
 <img src="images/2step14GitFlow.png" width="250" height="auto" alt="repo visual after step 1">
